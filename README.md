@@ -30,17 +30,5 @@ return ( <div className="p-8 grid grid-cols-1 md:grid-cols-3 gap-6"> {plans.map(
 
 /* ========================= FILE: src/pages/Home.jsx ========================= */ export default function Home() { return ( <div className="p-12 text-center"> <h1 className="text-4xl font-black">BAD SANDWICH</h1> <p className="mt-4">Bipolar Awareness Demonstration — Shedding All Needless Doubt</p> </div> ) }
 
-/* ========================= FILE: supabase.sql ========================= */ -- USERS create table users ( id uuid primary key default gen_random_uuid(), email text unique, role text, created_at timestamp default now() );
-
--- SUBSCRIPTIONS create table subscriptions ( id uuid primary key default gen_random_uuid(), user_id uuid references users(id), stripe_customer_id text, tier text, status text );
-
--- PROFESSIONAL VENDORS create table vendors ( id uuid primary key default gen_random_uuid(), name text, credentials text, approved boolean default false );
-
--- INSURANCE PARTNERS create table insurance_providers ( id uuid primary key default gen_random_uuid(), company text, state text, revenue_cap numeric default 0.30 );
-
-/* ========================= ENVIRONMENT VARIABLES ========================= */ VITE_SUPABASE_URL= VITE_SUPABASE_ANON_KEY= VITE_STRIPE_PUBLISHABLE_KEY=
-
-/* ========================= DEPLOYMENT ========================= */
-
 
 
