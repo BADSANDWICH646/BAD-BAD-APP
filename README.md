@@ -1,6 +1,4 @@
-
-
-/* ========================= FILE: package.json ========================= */ { "name": "bad-sandwich", "private": true, "version": "1.0.0", "type": "module", "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" }, "dependencies": { "@stripe/stripe-js": "^3.0.0", "@supabase/supabase-js": "^2.39.0", "react": "^18.3.1", "react-dom": "^18.3.1", "react-router-dom": "^6.22.3" }, "devDependencies": { "@vitejs/plugin-react": "^4.2.0", "autoprefixer": "^10.4.18", "postcss": "^8.4.35", "tailwindcss": "^3.4.1", "vite": "^5.1.0" } }
+ { "name": "bad-sandwich", "private": true, "version": "1.0.0", "type": "module", "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" }, "dependencies": { "@stripe/stripe-js": "^3.0.0", "@supabase/supabase-js": "^2.39.0", "react": "^18.3.1", "react-dom": "^18.3.1", "react-router-dom": "^6.22.3" }, "devDependencies": { "@vitejs/plugin-react": "^4.2.0", "autoprefixer": "^10.4.18", "postcss": "^8.4.35", "tailwindcss": "^3.4.1", "vite": "^5.1.0" } }
 
 /* ========================= FILE: src/main.jsx ========================= */ import React from 'react' import ReactDOM from 'react-dom/client' import { BrowserRouter } from 'react-router-dom' import App from './App' import './index.css'
 
@@ -28,7 +26,6 @@ return ( <div className="p-8 grid grid-cols-1 md:grid-cols-3 gap-6"> {plans.map(
 
 /* ========================= FILE: src/pages/Merch.jsx ========================= */ export default function Merch() { const items = ['T‑Shirt', 'Hoodie', 'Hat', 'Journal', 'Backpack'] return ( <div className="p-8 grid grid-cols-2 md:grid-cols-3 gap-4"> {items.map(i => ( <div key={i} className="border p-4 rounded"> <h3 className="font-bold">{i}</h3> <p>Print‑on‑Demand Fulfilled</p> <button className="mt-2 bg-black text-white px-3 py-1 rounded">Buy</button> </div> ))} </div> ) }
 
-/* ========================= FILE: src/pages/Home.jsx ========================= */ export default function Home() { return ( <div className="p-12 text-center"> <h1 className="text-4xl font-black">BAD SANDWICH</h1> <p className="mt-4">Bipolar Awareness Demonstration — Shedding All Needless Doubt</p> </div> ) }
 
 
 
