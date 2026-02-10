@@ -1,6 +1,4 @@
-# BAD-BAD-APP
-Bipolar awareness demonstration Marketplace
-// BAD SANDWICH – LAUNCH‑READY BETA (WEB + MOBILE‑READY) // Stack: React (Vite), Supabase, Stripe Subscriptions, Tailwind // This repo is deployable today on Vercel/Netlify + Supabase + Stripe
+
 
 /* ========================= FILE: package.json ========================= */ { "name": "bad-sandwich", "private": true, "version": "1.0.0", "type": "module", "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" }, "dependencies": { "@stripe/stripe-js": "^3.0.0", "@supabase/supabase-js": "^2.39.0", "react": "^18.3.1", "react-dom": "^18.3.1", "react-router-dom": "^6.22.3" }, "devDependencies": { "@vitejs/plugin-react": "^4.2.0", "autoprefixer": "^10.4.18", "postcss": "^8.4.35", "tailwindcss": "^3.4.1", "vite": "^5.1.0" } }
 
